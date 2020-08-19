@@ -61,11 +61,16 @@ print("Solution Generated")
 
 # In[3]:
 
-
+#saving the solution in txt file
+#make a .txt file in content folder just like you made a latex file
+#file should be empty
+f = open('result.txt', 'w')
 if selection == "yes":
     for line in RAW_TEXT:
         print(line)
-
+        f.write(line)
+        
+f.close()
 
 # In[4]:
 
